@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalina Bush</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="/" class="nav-link active">home</a>
+            <a href="/resources" class="nav-link">resources</a>
+            <a href="/about" class="nav-link">about</a>
+            <a href="/hobbies" class="nav-link">hobbies</a>
+        </div>
+    </nav>
+
+    <!-- Left Side Navigator -->
+    <div class="left-navigator">
+        <div class="nav-indicator" data-section="hero">
+            <div class="nav-line"></div>
+            <span class="nav-tooltip">Home</span>
+        </div>
+        <div class="nav-indicator" data-section="about">
+            <div class="nav-line"></div>
+            <span class="nav-tooltip">About</span>
+        </div>
+        <div class="nav-indicator" data-section="projects">
+            <div class="nav-line"></div>
+            <span class="nav-tooltip">Projects</span>
+        </div>
+        <div class="nav-indicator" data-section="project-1">
+            <div class="nav-line"></div>
+            <span class="nav-tooltip">ASA VizHub</span>
+        </div>
+        <div class="nav-indicator" data-section="project-2">
+            <div class="nav-line"></div>
+            <span class="nav-tooltip">MLS Stat</span>
+        </div>
+        <div class="nav-indicator" data-section="project-3">
+            <div class="nav-line"></div>
+            <span class="nav-tooltip">NWSL Stat</span>
+        </div>
+        <div class="nav-indicator" data-section="project-4">
+            <div class="nav-line"></div>
+            <span class="nav-tooltip">USL Stat</span>
+        </div>
+        <div class="nav-indicator" data-section="project-5">
+            <div class="nav-line"></div>
+            <span class="nav-tooltip">Writing</span>
+        </div>
+        <div class="nav-indicator" data-section="other-projects">
+            <div class="nav-line"></div>
+            <span class="nav-tooltip">Other Projects</span>
+        </div>
+        <div class="nav-indicator" data-section="teams">
+            <div class="nav-line"></div>
+            <span class="nav-tooltip">Teams</span>
+        </div>
+        <div class="nav-indicator" data-section="resume">
+            <div class="nav-line"></div>
+            <span class="nav-tooltip">Resume</span>
+        </div>
+        <div class="nav-indicator" data-section="resources">
+            <div class="nav-line"></div>
+            <span class="nav-tooltip">Resources</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="section-content">
+                <p class="hero-intro">hi, my name is</p>
+                <div class="name-carousel">
+                    <button class="carousel-arrow carousel-left" aria-label="Previous name">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="carousel-container">
+                        <div class="name-option side-left"></div>
+                        <div class="name-option center-name">Catalina Bush</div>
+                        <div class="name-option side-right"></div>
+                    </div>
+                    <button class="carousel-arrow carousel-right" aria-label="Next name">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <p class="hero-subtitle">soccer data & analytics</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-content">
+                <h2 class="section-title">about!</h2>
+                <div class="about-content">
+                    <p>I'm a Junior at Willamette University majoring in Data Science. I'm originally from Tacoma,
+                        Washington, but I've also lived in Mijas, Spain and Syracuse, NY. I'm part Colombian and
+                        fluent in both English and Spanish. Soccer has always been an integral part of my family and
+                        some of my favorite memories revolve around the sport: watching Real Madrid at the Bernabeu,
+                        United at Old Trafford, and the Concacaf Champions League final at Lumen Field.</p>
+                    <p>Some time ago I was drawn into soccer analytics and I never looked back. I've used everything
+                        from Python, R, and SQL to Tableau. I'm skilled in crafting beautiful data visualizations and
+                        building automated processes from the ground up. Keep scrolling to see the cool things I've
+                        built!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Header Section -->
+        <section id="projects" class="section projects-header-section">
+            <div class="section-content">
+                <h2 class="section-title">Projects</h2>
+                <p class="projects-intro">these are the things that most people know me for</p>
+            </div>
+        </section>
+
+        <!-- Project 1 Section -->
+        <section id="project-1" class="section project-section">
+            <div class="section-content project-layout gallery-center">
+                <div class="project-header">
+                    <h3 class="project-title">ASA VizHub</h3>
+                    <p class="project-description">A platform for generating industry-quality data visualizations at the
+                        click of a button. Built using ASA data and models.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">R Shiny</span>
+                        <span class="tech-tag">ggplot2</span>
+                        <span class="tech-tag">duckDB</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="project-gallery centered">
+                    <div class="slideshow-container">
+                        <div class="slide active">
+                            <img src="/images/example1_viz.png" alt="Team View">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/example2_viz.png" alt="League View">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/example3_viz.png" alt="Player View">
+                        </div>
+                        <button class="slideshow-btn prev-btn" onclick="changeSlide('project-1', -1)">‹</button>
+                        <button class="slideshow-btn next-btn" onclick="changeSlide('project-1', 1)">›</button>
+                        <div class="slideshow-dots">
+                            <span class="dot active" onclick="currentSlide('project-1', 1)"></span>
+                            <span class="dot" onclick="currentSlide('project-1', 2)"></span>
+                            <span class="dot" onclick="currentSlide('project-1', 3)"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-summary">
+                    <div class="project-details">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>20+ custom plots in ggplot</li>
+                            <li>Thousands of games across 6 leagues</li>
+                            <li>Daily data updates</li>
+                            <li>Downloadable images</li>
+                            <li>Beautiful, interactive interface</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 2 Section -->
+        <section id="project-2" class="section project-section">
+            <div class="section-content project-layout gallery-right">
+                <div class="project-info">
+                    <h3 class="project-title">@mlsstat</h3>
+                    <p class="project-description">An automated Bluesky feed posting data-based post-match reports for
+                        MLS matches.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                    <div class="project-details">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Robust data pipeline</li>
+                            <li>Automated posting to Bluesky</li>
+                            <li>Free, public, and accessible</li>
+                            <li>High-quality visuals</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-gallery">
+                    <div class="slideshow-container">
+                        <div class="slide active">
+                            <img src="/images/example1_mls.jpg" alt="Main report">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/example2_mls.jpg" alt="Shotmap">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/example3_mls.jpg" alt="Passes in final 1/3">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/example4_mls.jpg" alt="G+ Ratings">
+                        </div>
+                        <button class="slideshow-btn prev-btn" onclick="changeSlide('project-2', -1)">‹</button>
+                        <button class="slideshow-btn next-btn" onclick="changeSlide('project-2', 1)">›</button>
+                        <div class="slideshow-dots">
+                            <span class="dot active" onclick="currentSlide('project-2', 1)"></span>
+                            <span class="dot" onclick="currentSlide('project-2', 2)"></span>
+                            <span class="dot" onclick="currentSlide('project-2', 3)"></span>
+                            <span class="dot" onclick="currentSlide('project-2', 4)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 3 Section -->
+        <section id="project-3" class="section project-section">
+            <div class="section-content project-layout gallery-right">
+                <div class="project-gallery">
+                    <div class="slideshow-container">
+                        <div class="slide active">
+                            <img src="/images/example1_nwsl.jpg" alt="Main report">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/example2_nwsl.jpg" alt="Shotmap">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/example3_nwsl.jpg" alt="Passes in final 1/3">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/example4_nwsl.jpg" alt="G+ Ratings">
+                        </div>
+                        <button class="slideshow-btn prev-btn" onclick="changeSlide('project-3', -1)">‹</button>
+                        <button class="slideshow-btn next-btn" onclick="changeSlide('project-3', 1)">›</button>
+                        <div class="slideshow-dots">
+                            <span class="dot active" onclick="currentSlide('project-3', 1)"></span>
+                            <span class="dot" onclick="currentSlide('project-3', 2)"></span>
+                            <span class="dot" onclick="currentSlide('project-3', 3)"></span>
+                            <span class="dot" onclick="currentSlide('project-3', 4)"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">@nwslstat</h3>
+                    <p class="project-description">An automated Bluesky feed posting data-based post-match reports for
+                        NWSL matches.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                    <div class="project-details">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Women's soccer coverage</li>
+                            <li>Entirely original charts/plots</li>
+                            <li>ASA g+ integration</li>
+                            <li>Automatic monitoring in Discord</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-4" class="section project-section">
+            <div class="section-content project-layout gallery-right">
+                <div class="project-info">
+                    <h3 class="project-title">@uslstat</h3>
+                    <p class="project-description">An automated Bluesky feed posting data-based post-match reports for
+                        USL C, USL 1, and USL S matches.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                    <div class="project-details">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Lower league coverage</li>
+                            <li>Data stored in PostgreSQL</li>
+                            <li>Advanced metrics + frameworks (WGCF)</li>
+                            <li>Archive via RShiny</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-gallery">
+                    <div class="slideshow-container">
+                        <div class="slide active">
+                            <img src="/images/example1_usl.jpg" alt="Main report">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/example2_usl.jpg" alt="Shotmap">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/example3_usl.jpg" alt="Passes in final 1/3">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/example4_usl.jpg" alt="G+ Ratings">
+                        </div>
+                        <button class="slideshow-btn prev-btn" onclick="changeSlide('project-4', -1)">‹</button>
+                        <button class="slideshow-btn next-btn" onclick="changeSlide('project-4', 1)">›</button>
+                        <div class="slideshow-dots">
+                            <span class="dot active" onclick="currentSlide('project-4', 1)"></span>
+                            <span class="dot" onclick="currentSlide('project-4', 2)"></span>
+                            <span class="dot" onclick="currentSlide('project-4', 3)"></span>
+                            <span class="dot" onclick="currentSlide('project-4', 4)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-5" class="section project-section">
+            <div class="section-content writing-layout">
+                <h2 class="section-title">Writing</h2>
+                <p class="section-description">As seen in:</p>
+                <div class="writing-grid">
+                    <!-- Top row: 3 items -->
+                    <div class="writing-item">
+                        <div class="writing-image">
+                            <a href="https://www.thetransferflow.com/" target="_blank"><img src="images/writing_1.png"
+                                    alt="The Transfer Flow" onerror="this.src='images/writing_1.jpg'"></a>
+                        </div>
+                        <h4 class="writing-title">The Transfer Flow</h4>
+                        <p class="writing-description">Data-based analysis and scouting articles covering EPL + european
+                            leagues.</p>
+                    </div>
+                    <div class="writing-item">
+                        <div class="writing-image">
+                            <a href="https://www.sounderatheart.com/" target="_blank"><img src="images/writing_2.png"
+                                    alt="Sounder At Heart" onerror="this.src='images/writing_2.jpg'"></a>
+                        </div>
+                        <h4 class="writing-title">Sounder At Heart</h4>
+                        <p class="writing-description">Long-form Seattle Sounders FC analysis using stats + data viz.
+                        </p>
+                    </div>
+                    <div class="writing-item">
+                        <div class="writing-image">
+                            <a href="https://backheeled.com/" target="_blank"><img src="images/writing_3.png"
+                                    alt="Backheeled" onerror="this.src='images/writing_3.jpg'"></a>
+                        </div>
+                        <h4 class="writing-title">Backheeled</h4>
+                        <p class="writing-description">League-wide MLS analysis.</p>
+                    </div>
+                    <!-- Bottom row: 2 items -->
+                    <div class="writing-item bottom-row first-of-type">
+                        <div class="writing-image">
+                            <a href="https://americansocceranalysis.com/" target="_blank"><img
+                                    src="images/writing_4.png" alt="American Soccer Analysis"
+                                    onerror="this.src='images/writing_4.jpg'"></a>
+                        </div>
+                        <h4 class="writing-title">American Soccer Analysis</h4>
+                        <p class="writing-description">In-depth projects & articles covering NWSL and MLS.</p>
+                    </div>
+                    <div class="writing-item bottom-row last-of-type">
+                        <div class="writing-image">
+                            <a href="https://equalizersoccer.com/" target="_blank"><img src="images/writing_5.png"
+                                    alt="The Equalizer" onerror="this.src='images/writing_5.jpg'"></a>
+                        </div>
+                        <h4 class="writing-title">The Equalizer</h4>
+                        <p class="writing-description">NWSL player + team analysis.</p>
+                    </div>
+                </div>
+                <p class="writing-more">and more...</p>
+            </div>
+        </section>
+
+        <!-- Other Projects Section -->
+        <section id="other-projects" class="section other-projects-section">
+            <div class="section-content">
+                <h2 class="section-title">Other Projects</h2>
+                <div class="other-projects-grid">
+                    <div class="other-project-card" data-title="Euro VAEP Tables"
+                        data-description="Generated and released advanced VAEP data for 2025 W Euros alongside Chloe Sainsbury.">
+                        <div class="project-image">
+                            <img src="images/other_1.png" alt="Project 1" onerror="this.src='images/other_1.jpg'">
+                        </div>
+                        <div class="project-tooltip">
+                            <h4>Euro VAEP Tables</h4>
+                            <p>Generated and released advanced VAEP data for 2025 W Euros alongside Chloe Sainsbury.</p>
+                        </div>
+                    </div>
+                    <div class="other-project-card" data-title="Shot + xG Tableau"
+                        data-description="Dashboard for visualizing WGCF principles using ASA xG data for MLS + NWSL.">
+                        <div class="project-image">
+                            <img src="images/other_2.png" alt="Project 2" onerror="this.src='images/other_2.jpg'">
+                        </div>
+                        <div class="project-tooltip">
+                            <h4>Shot + xG Tableau</h4>
+                            <p>Dashboard for visualizing WGCF principles using ASA xG data for MLS + NWSL.</p>
+                        </div>
+                    </div>
+                    <div class="other-project-card" data-title="FBREF Wrapper"
+                        data-description="Tableau dashboard for visualizing FBREF data for MLS + NWSL.">
+                        <div class="project-image">
+                            <img src="images/other_3.png" alt="Project 3" onerror="this.src='images/other_3.jpg'">
+                        </div>
+                        <div class="project-tooltip">
+                            <h4>FBREF Wrapper</h4>
+                            <p>Tableau dashboard for visualizing FBREF data for MLS + NWSL.</p>
+                        </div>
+                    </div>
+                    <div class="other-project-card" data-title="B Team Podcast"
+                        data-description="Women's soccer under-21 podcast discussing NWSL, USWNT, and more.">
+                        <div class="project-image">
+                            <img src="images/other_4.png" alt="Project 4" onerror="this.src='images/other_4.jpg'">
+                        </div>
+                        <div class="project-tooltip">
+                            <h4>B Team Podcast</h4>
+                            <p>Women's soccer under-21 podcast discussing NWSL, USWNT, and more.</p>
+                        </div>
+                    </div>
+                    <div class="other-project-card" data-title="Stateside Stats"
+                        data-description="Substack for sharing essays + analysis relating to data visualization and other soccer topics.">
+                        <div class="project-image">
+                            <img src="images/other_5.png" alt="Project 5" onerror="this.src='images/other_5.jpg'">
+                        </div>
+                        <div class="project-tooltip">
+                            <h4>Stateside Stats</h4>
+                            <p>Substack for sharing essays + analysis relating to data visualization and other soccer
+                                topics.</p>
+                        </div>
+                    </div>
+                    <div class="other-project-card" data-title="ASI Summit"
+                        data-description="Completed research project and presented at 2025 summit. Joined organizing team for 2026.">
+                        <div class="project-image">
+                            <img src="images/other_6.png" alt="Project 6" onerror="this.src='images/other_6.jpg'">
+                        </div>
+                        <div class="project-tooltip">
+                            <h4>ASI Summit</h4>
+                            <p>Completed research project and presented at 2025 summit. Joined organizing team for 2026.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="other-project-card" data-title="Chelsea Vizathon"
+                        data-description="Competed in Chelsea's 2025 Vizathon and submitted with Chloe Sainsbury. Submission, RAPID, was shortlisted.">
+                        <div class="project-image">
+                            <img src="images/other_7.jpeg" alt="Project 7" onerror="this.src='images/other_7.jpg'">
+                        </div>
+                        <div class="project-tooltip">
+                            <h4>Chelsea Vizathon</h4>
+                            <p>Competed in Chelsea's 2025 Vizathon and submitted with Chloe Sainsbury. Submission,
+                                RAPID, was shortlisted.</p>
+                        </div>
+                    </div>
+                    <div class="other-project-card" data-title="College Sports Research"
+                        data-description="Research analyzing talent in college sports w/ Dr. Simion and Dr. Losak @ Syracuse University.">
+                        <div class="project-image">
+                            <img src="images/other_8.png" alt="Project 8" onerror="this.src='images/other_8.jpg'">
+                        </div>
+                        <div class="project-tooltip">
+                            <h4>College Sports Research</h4>
+                            <p>Research analyzing talent distribution in collegiate sports w/ Dr. Simion and Dr. Losak @
+                                Syracuse University.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teams Section -->
+        <section id="teams" class="section teams-section">
+            <div class="section-content">
+                <h2 class="section-title">Teams</h2>
+                <div class="teams-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-logo">
+                            <img src="images/team_1.png" alt="Team 1 Logo" onerror="this.src='images/team_1.jpg'">
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="team-name">Ballard FC</h3>
+                            <h4 class="team-position">Gameday Operations Intern</h4>
+                            <p class="team-period">May 2024 - August 2024</p>
+                            <p class="team-description">Prepared stadium areas prior to matches on game days, assisted
+                                club staff in various tasks and responsibilities during games, and participated in
+                                clean-up/tear-down after games.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-logo">
+                            <img src="images/team_2.png" alt="Team 2 Logo" onerror="this.src='images/team_2.jpg'">
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="team-name">Syracuse Men's Soccer</h3>
+                            <h4 class="team-position">Data Analytics Intern</h4>
+                            <p class="team-period">April 2024 - May 2025</p>
+                            <p class="team-description">Worked as part of analytics team to track, process, and present
+                                key metrics to coaches. Assisted with analysis of PlayerData statistics and heatmaps.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-logo">
+                            <img src="images/team_3.png" alt="Team 3 Logo" onerror="this.src='images/team_3.jpg'">
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="team-name">Carolina Ascent FC</h3>
+                            <h4 class="team-position">Data Analytics Intern</h4>
+                            <p class="team-period">December 2024 - June 2025</p>
+                            <p class="team-description">Worked under the video analyst, leveraging StatsBomb data to
+                                power advanced pre- and post-match reports. Created player and team KPI tracking
+                                dashboards. Oversaw ETL transition + trained successors.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-logo">
+                            <img src="images/team_4.png" alt="Team 4 Logo" onerror="this.src='images/team_4.jpg'">
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="team-name">D.C. United</h3>
+                            <h4 class="team-position">Data Analytics Intern</h4>
+                            <p class="team-period">May 2025 - August 2025</p>
+                            <p class="team-description">Built a comprehensive all-in-one software solution in R Shiny,
+                                aiding key functions in the sporting department. Improved decision-making capabilities
+                                by transforming simple processes into a powerful tool.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section resume-section">
+            <div class="section-content">
+                <h2 class="section-title">Other Experience</h2>
+                <div class="resume-content">
+                    <div class="experience-section">
+                        <h3 class="resume-subsection-title">Work Experience</h3>
+                        <div class="experience-item">
+                            <h4>Research Assistant</h4>
+                            <p class="company">Syracuse University • 2024-Present</p>
+                            <p>Worked with Assistant Professors Dr. Jeremy Losak and Dr. Adrian Simion on research
+                                aiming to describe and analyze talent distribution across collegiate sports. Collected
+                                advanced team and player statistics from various webpages and cleaned data for project
+                                uses. Ensured timeliness and accuracy of data.</p>
+                        </div>
+                        <div class="experience-item">
+                            <h4>Youth Soccer Coach</h4>
+                            <p class="company">Tacoma Stars • Seasonal • 2023-2024</p>
+                            <p>Led soccer training summer camps for children ages 4-8 and assisted with older age
+                                groups. Introduced basic and intermediate ball skills, positioning and tactics to young
+                                players, helped grow athletes' confidence and knowledge in the sport.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-skills-section">
+                        <div class="education-section">
+                            <h3 class="resume-subsection-title">Education</h3>
+                            <div class="education-item">
+                                <h4>Pursued BS in Sport Analytics</h4>
+                                <p class="school">Syracuse University • 2023-2025</p>
+                            </div>
+                            <div class="education-item">
+                                <h4>Pursuing BS in Data Science</h4>
+                                <p class="school">Willamette University • 2025-2027</p>
+                            </div>
+                        </div>
+
+                        <div class="skills-section">
+                            <h3 class="resume-subsection-title skills-title">Technical Skills</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">R</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Tableau</span>
+                                <span class="skill-tag">RShiny</span>
+                                <span class="skill-tag">DigitalOcean</span>
+                                <span class="skill-tag">Data Visualization</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Web Scraping</span>
+                            </div>
+                            <h3 class="resume-subsection-title skills-title">Data Providers</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag provider">Hudl StatsBomb</span>
+                                <span class="skill-tag provider">Opta</span>
+                                <span class="skill-tag provider">SkillCorner</span>
+                                <span class="skill-tag provider">Metrica</span>
+                                <span class="skill-tag provider">Wyscout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-content">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-description">
+                        I'm open to consultancy and part-time opportunities as well as freelance work. If you're
+                        interested in connecting for professional reasons, email is best. Otherwise, the best place to
+                        find me is Bluesky!
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:nwslstats22@gmail.com" class="contact-icon" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/catalina-bush" class="contact-icon" title="LinkedIn"
+                            target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://bsky.app/profile/cata-bush.bsky.social" class="contact-icon" title="Bluesky"
+                            target="_blank">
+                            <i class="fa-brands fa-bluesky"></i>
+                        </a>
+                        <a href="https://github.com/catabush05" class="contact-icon" title="GitHub" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

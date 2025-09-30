@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Catalina Bush</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .page-content {
+            padding: 6rem 2rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: calc(100vh - 160px);
+        }
+
+        .page-title {
+            font-size: 3rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 3rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hobby-card {
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Top row cards - vertical layout */
+        .hobby-card.vertical {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hobby-card.vertical .hobby-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .hobby-card.vertical .hobby-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hobby-card.vertical .hobby-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        /* Bottom row cards - horizontal layout */
+        .hobby-card.horizontal {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+        }
+
+        .hobby-card.horizontal .hobby-image {
+            width: 150px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .hobby-card.horizontal .hobby-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hobby-card.horizontal .hobby-content {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hobby-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: #000;
+        }
+
+        .hobby-description {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .hobbies-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .hobby-card.horizontal {
+                flex-direction: column;
+            }
+
+            .hobby-card.horizontal .hobby-image {
+                width: 100%;
+                height: 200px;
+            }
+
+            .hobby-card.horizontal .hobby-content {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-links">
+            <a href="/" class="nav-link">home</a>
+            <a href="/resources" class="nav-link">resources</a>
+            <a href="/about" class="nav-link">about</a>
+            <a href="/hobbies" class="nav-link active">hobbies</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <h1 class="page-title">things i also do</h1>
+
+        <div class="hobbies-grid">
+            <!-- Top row - vertical layout -->
+            <div class="hobby-card vertical">
+                <div class="hobby-image">
+                    <img src="../images/hobbies_1.jpg" alt="Aquascaping">
+                </div>
+                <div class="hobby-content">
+                    <h3 class="hobby-title">aquascaping</h3>
+                    <p class="hobby-description">
+                        I love aquascaping because it's basically a living art form. Pictured is my UNS 5e paludarium
+                        (aquarium + terrarium) stocked with dragon wood, seiryu stone, and tons of anubias + buce +
+                        more.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hobby-card vertical">
+                <div class="hobby-image">
+                    <img src="../images/hobbies_2.jpg" alt="prose + poetry">
+                </div>
+                <div class="hobby-content">
+                    <h3 class="hobby-title">prose + poetry</h3>
+                    <p class="hobby-description">
+                        I'm a big fan of both writing and reading poetry. Some of my favorite authors include Sara
+                        Teasdale, Emily Dickinson (letters specifically), and Sappho (John Maxwell Edmonds has an
+                        interesting translation).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom row - horizontal layout -->
+            <div class="hobby-card horizontal">
+                <div class="hobby-image">
+                    <img src="../images/hobbies_3.jpg" alt="crochet">
+                </div>
+                <div class="hobby-content">
+                    <h3 class="hobby-title">crochet</h3>
+                    <p class="hobby-description">
+                        I'm the least consistent crocheter ever but I enjoy making clothes for my Build a Bear stuffed
+                        frog (pictured left). I've also made stockings, bags, and more.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hobby-card horizontal">
+                <div class="hobby-image">
+                    <img src="../images/hobbies_4.jpg" alt="Baking">
+                </div>
+                <div class="hobby-content">
+                    <h3 class="hobby-title">baking</h3>
+                    <p class="hobby-description">
+                        Mostly gluten-free + dairy-free bakes. Pictured right is a gingerbread cake that has become a
+                        yearly tradition. I do this less at college (no kitchen).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
