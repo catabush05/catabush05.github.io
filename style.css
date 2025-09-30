@@ -1835,3 +1835,134 @@ body {
     color: #666;
     margin: 0;
 }
+
+/* Additional Mobile-Specific Styles */
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column !important;
+    }
+
+    .about-image {
+        max-width: 100% !important;
+    }
+
+    /* Make font smaller on the name section */
+    .name-option {
+        font-size: 2.5rem !important;
+    }
+
+    .name-option.center-name {
+        font-size: 2.5rem !important;
+    }
+
+    .carousel-arrow {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .carousel-arrow.carousel-right {
+        right: 0px !important;
+    }
+
+    .carousel-arrow.carousel-left {
+        left: 0px !important;
+    }
+
+    /* Remove project-summary top margin */
+    .project-summary {
+        margin-top: 0 !important;
+    }
+
+    /* Make writing section 1x5 column with wider boxes */
+    .writing-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        max-width: 100% !important;
+        padding: 0 1rem !important;
+    }
+
+    .writing-item {
+        grid-column: 1 !important;
+        width: 100% !important;
+    }
+
+    .writing-item.bottom-row {
+        grid-column: 1 !important;
+    }
+
+    .writing-item.bottom-row.first-of-type,
+    .writing-item.bottom-row.last-of-type {
+        grid-column: 1 !important;
+    }
+
+    .writing-image {
+        width: 100% !important;
+        height: 120px !important;
+        max-width: none !important;
+    }
+
+    /* Make other projects section 2 columns, 4 rows */
+    .other-projects-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(4, 1fr) !important;
+        gap: 1rem !important;
+        padding: 0 1rem !important;
+    }
+
+    /* Make icons bigger and font smaller in tooltips */
+    .other-project-card {
+        aspect-ratio: 1 !important;
+    }
+
+    .project-tooltip {
+        padding: 1rem 0.75rem 0.75rem !important;
+    }
+
+    .project-tooltip h4 {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+
+    .project-tooltip p {
+        font-size: 0.75rem !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Align logos on line and make text boxes wider in teams section */
+    .teams-timeline::before {
+        left: 47px !important;
+    }
+
+    .timeline-logo {
+        width: 60px !important;
+        height: 60px !important;
+        border-width: 2px !important;
+    }
+
+    .timeline-item {
+        margin-left: 1rem !important;
+    }
+
+    .timeline-content {
+        max-width: calc(100% - 80px) !important;
+        flex: 1 !important;
+        margin-left: 1.5rem !important;
+    }
+
+    .team-name {
+        font-size: 1.1rem !important;
+    }
+
+    .team-position {
+        font-size: 1rem !important;
+    }
+
+    .team-period {
+        font-size: 0.85rem !important;
+    }
+
+    .team-description {
+        font-size: 0.85rem !important;
+    }
+}
