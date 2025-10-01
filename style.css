@@ -1847,7 +1847,7 @@ body {
         max-width: 100% !important;
     }
     .about-image img {
-        transform: rotate(-90deg);
+        transform: rotate(-90deg) !important;
     }
 
     /* Make font smaller on the name section */
