@@ -1978,12 +1978,3 @@ body {
         font-size: 0.85rem !important;
     }
 }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 768px) {
-    .about-image img {
-        -webkit-transform: rotate(-90deg) !important;
-        transform: rotate(-90deg) !important;
-        margin-top: 1rem !important;
-        margin-bottom: 2rem !important;
-    }
-}
