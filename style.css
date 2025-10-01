@@ -1693,6 +1693,10 @@ body {
     max-width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    image-orientation: from-image;
+    /* Fix for iOS rotation issues */
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 .about-section {
@@ -1846,8 +1850,13 @@ body {
     .about-image {
         max-width: 100% !important;
     }
+
     .about-image img {
-        transform: rotate(-90deg) !important;
+        /* Additional iOS rotation fix */
+        image-orientation: from-image;
+        -webkit-transform: rotate(0deg) !important;
+        transform: rotate(0deg) !important;
+        object-fit: cover;
     }
 
     /* Make font smaller on the name section */
